@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MD trajectory analysis on goModel</title>
+    <link>/gomodel/docs/gomd/</link>
+    <description>Recent content in MD trajectory analysis on goModel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-en</language>
+    
+	<atom:link href="/gomodel/docs/gomd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shape indicators</title>
+      <link>/gomodel/docs/gomd/shape/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gomodel/docs/gomd/shape/</guid>
+      <description>goAnalyze can obtain indicators of the global shape of a PyMOL selection. The percentage of planarity and elongation are derived from the properties of the moment of inertia tensor, based on the work by Taylor et al., .(1983), J Mol Graph, 1, 30
+To obtain the percentage of planarity and elongation for a selection in a single frame, use:
+goshape sele Where sele is the name of the selection.
+If you want to follow the evolution of the shape of one or more selections along a trajectory, you need to use gomd.</description>
+    </item>
+    
+    <item>
+      <title>Distances</title>
+      <link>/gomodel/docs/gomd/distances/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gomodel/docs/gomd/distances/</guid>
+      <description>You can plot the distances between pairs of selections along a trajectory. If a selection has more than one atom, its center of mass will be used. If the masses for one or more atoms can&amp;rsquo;t be obtained, the geometric center will be used (a warning is printer in this case).
+The command is:
+gomd distances, sele1, sele2, sele3, sele4 ... Which will plot the distances between the selections sele1 and sele2 and between sele3 and sele4.</description>
+    </item>
+    
+    <item>
+      <title>Ramachandran plots</title>
+      <link>/gomodel/docs/gomd/ramachandran/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gomodel/docs/gomd/ramachandran/</guid>
+      <description>The gomodel MD Ramachandran plots work similarly to the isolated-structure ones. The main differences are:
+ Only one selection is accepted The point in the plot are colored by the frame of the trajectory to which they correspond  You will also notice that the appearance of the plot is different in both cases. This is because only the MD trajectory Ramachandran plot uses the Python Matplotlib library, while the single-structure one uses Go and Gonum to produce the image.</description>
+    </item>
+    
+    <item>
+      <title>RMSD</title>
+      <link>/gomodel/docs/gomd/rmsd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gomodel/docs/gomd/rmsd/</guid>
+      <description>The RMSD of several selections against references for each of them can be plotted. The general way to do it is:
+gomd rmsd, ref1, sel1, ref2, sel2 ... Where ref1 is the references state for sel1 and so on. In the most common case, you simply want to use the first frame of the same selection as a reference. In that case, simply do:
+gomd rmsd, sel1, sel1, sel2, sel2 .</description>
+    </item>
+    
+    <item>
+      <title>RMSF</title>
+      <link>/gomodel/docs/gomd/rmsf/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gomodel/docs/gomd/rmsf/</guid>
+      <description>You can easily plot the RMSF for all atoms in a selection, over a trajectory by using this command:
+gomd rmsf, sele Where sele is the name of your selection.
+Note that only one selection is accepted here. If you give more, the rest will be ignored. A common application of this function is to obtain the RMSF for the alpha carbons of a protein during a trajectory, as in the example:</description>
+    </item>
+    
+    <item>
+      <title>Superimposing a trajectory</title>
+      <link>/gomodel/docs/gomd/super/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/gomodel/docs/gomd/super/</guid>
+      <description>You can superimpose a whole trajectory to a given reference. You need 3 selections:
+The reference For which the first state will be taken.
+The target selection This selection needs to have the same number of atoms as the reference. For each frame of this selection gomd will calculate the superposition to the first frame of the reference, thus obtaining rotation and translation matrices.
+The &amp;ldquo;moved&amp;rdquo; selection For each frame, the rotation + translation matrices obtained with the corresponding frame of the target will be applied to this selection.</description>
+    </item>
+    
+  </channel>
+</rss>

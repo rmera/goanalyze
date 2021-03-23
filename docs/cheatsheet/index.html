@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="All arguments go separated by commas Optional arguments are shown between brackets, with their default value.  Single structures Ramachandran plot gorama sele1, sele2, ... Add hydrogens to a (proteic) selection goreduce sele Geometry optimization goopt sele [fixed=fixsele] [quality=medium] [solvent=water] [charge=0] [multi=1] Trajectories All trajectory functions accept a &ldquo;skip=N&rdquo; paramenter that causes gomd to analyze every N frames. skip=1 (the default) reads every 1 frame, i.e. all frames.
+Distances gomd distances, sele1, sele2, sele3, sele4 ."><meta property="og:title" content=" goAnalyze Cheat Sheet" />
+<meta property="og:description" content="All arguments go separated by commas Optional arguments are shown between brackets, with their default value.  Single structures Ramachandran plot gorama sele1, sele2, ... Add hydrogens to a (proteic) selection goreduce sele Geometry optimization goopt sele [fixed=fixsele] [quality=medium] [solvent=water] [charge=0] [multi=1] Trajectories All trajectory functions accept a &ldquo;skip=N&rdquo; paramenter that causes gomd to analyze every N frames. skip=1 (the default) reads every 1 frame, i.e. all frames.
+Distances gomd distances, sele1, sele2, sele3, sele4 ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/gomodel/docs/cheatsheet/" />
+
+<title> goAnalyze Cheat Sheet | goModel</title>
+<link rel="icon" href="/gomodel/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/gomodel/book.min.284c8fc21ced13c579d9027a9d14893c56b243c6045001180391cebb4cc36ab8.css" integrity="sha256-KEyPwhztE8V52QJ6nRSJPFayQ8YEUAEYA5HOu0zDarg=">
+<script defer src="/gomodel/en.search.min.a1658e3699106f7f1610e7970ae2b8b0dc76464fd842fe1713583f4f5e4e7983.js" integrity="sha256-oWWONpkQb38WEOeXCuK4sNx2Rk/YQv4XE1g/T15OeYM="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/gomodel"><img src="/gomodel/gopherweb.png" alt="Logo" /><span>goModel</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gorama/" class="">Ramachandran plot of PyMOL selections</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/goreduce/" class="">Adding hydrogens to PyMOL selections</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/goopt/" class="">Geometry optimizations</a>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/gomodel/docs/gomd/" class="">MD trajectory analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/shape/" class="">Shape indicators</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/distances/" class="">Distances</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/ramachandran/" class="">Ramachandran plots</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/rmsd/" class="">RMSD</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/rmsf/" class="">RMSF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/super/" class="">Superimposing a trajectory</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/cheatsheet/" class="active"> goAnalyze Cheat Sheet</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/download/" class="">Download goAnalyze!</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/gomodel/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong> goAnalyze Cheat Sheet</strong>
+
+  <label for="toc-control">
+    <img src="/gomodel/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#single-structures">Single structures</a>
+          <ul>
+            <li><a href="#ramachandran-plot">Ramachandran plot</a></li>
+            <li><a href="#add-hydrogens-to-a-proteic-selection">Add hydrogens to a (proteic) selection</a></li>
+            <li><a href="#geometry-optimization">Geometry optimization</a></li>
+          </ul>
+        </li>
+        <li><a href="#trajectories">Trajectories</a>
+          <ul>
+            <li><a href="#distances">Distances</a></li>
+            <li><a href="#ramachandran-plot-1">Ramachandran Plot</a></li>
+            <li><a href="#rmsd">RMSD</a></li>
+            <li><a href="#rmsf">RMSF</a></li>
+            <li><a href="#superimposing">Superimposing</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><ul>
+<li>All arguments go separated by commas</li>
+<li>Optional arguments are shown between brackets, with their default value.</li>
+</ul>
+<h2 id="single-structures">Single structures</h2>
+<h3 id="ramachandran-plot">Ramachandran plot</h3>
+<pre><code>gorama sele1, sele2, ...
+</code></pre><h3 id="add-hydrogens-to-a-proteic-selection">Add hydrogens to a (proteic) selection</h3>
+<pre><code>goreduce sele
+</code></pre><h3 id="geometry-optimization">Geometry optimization</h3>
+<pre><code>goopt sele [fixed=fixsele] [quality=medium] [solvent=water] [charge=0] [multi=1]
+</code></pre><h2 id="trajectories">Trajectories</h2>
+<p>All trajectory functions accept a &ldquo;skip=N&rdquo; paramenter that
+causes gomd to analyze every N frames. skip=1 (the default) reads every 1 frame, i.e.
+all frames.</p>
+<h3 id="distances">Distances</h3>
+<pre><code>gomd distances, sele1, sele2, sele3, sele4 ...
+</code></pre><p>(the numbr of selections must be even!)</p>
+<h3 id="ramachandran-plot-1">Ramachandran Plot</h3>
+<pre><code>gomd ramachandran, sele 
+
+</code></pre><h3 id="rmsd">RMSD</h3>
+<pre><code>gomd rmsd, sel1, sel1, sel2, sel2 ... 
+
+</code></pre><p>Uses the first frame from sel1 as a reference for all frames in sel1, and so on.</p>
+<h3 id="rmsf">RMSF</h3>
+<pre><code>gomd rmsf, selection 
+</code></pre><h3 id="superimposing">Superimposing</h3>
+<pre><code>gomd super, ref_sele, target_sele, moved_sele
+</code></pre></article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#single-structures">Single structures</a>
+          <ul>
+            <li><a href="#ramachandran-plot">Ramachandran plot</a></li>
+            <li><a href="#add-hydrogens-to-a-proteic-selection">Add hydrogens to a (proteic) selection</a></li>
+            <li><a href="#geometry-optimization">Geometry optimization</a></li>
+          </ul>
+        </li>
+        <li><a href="#trajectories">Trajectories</a>
+          <ul>
+            <li><a href="#distances">Distances</a></li>
+            <li><a href="#ramachandran-plot-1">Ramachandran Plot</a></li>
+            <li><a href="#rmsd">RMSD</a></li>
+            <li><a href="#rmsf">RMSF</a></li>
+            <li><a href="#superimposing">Superimposing</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

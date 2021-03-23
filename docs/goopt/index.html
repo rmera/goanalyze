@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="goAnalyze uses the xtb from the Grimme Group to optimize PyMOL objects or selections. The xtb program is open source, and easy-to-install binaries are provided.
+Basic optimization: The command:
+goopt sele Will optimize the geometry of the selection sele The optimized structure will be written to a new object called &ldquo;sele_opt&rdquo; (or whatevertheselectionamewas_opt&rdquo;)
+A bit more advanced The previous is a very fast semiempirical model (GFN0-xTB). You can request a cheaper, but still accurate force-field (GFNFF) calculation with:"><meta property="og:title" content="Geometry optimizations" />
+<meta property="og:description" content="goAnalyze uses the xtb from the Grimme Group to optimize PyMOL objects or selections. The xtb program is open source, and easy-to-install binaries are provided.
+Basic optimization: The command:
+goopt sele Will optimize the geometry of the selection sele The optimized structure will be written to a new object called &ldquo;sele_opt&rdquo; (or whatevertheselectionamewas_opt&rdquo;)
+A bit more advanced The previous is a very fast semiempirical model (GFN0-xTB). You can request a cheaper, but still accurate force-field (GFNFF) calculation with:" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/gomodel/docs/goopt/" />
+
+<title>Geometry optimizations | goModel</title>
+<link rel="icon" href="/gomodel/favicon.png" type="image/x-icon">
+<link rel="stylesheet" href="/gomodel/book.min.284c8fc21ced13c579d9027a9d14893c56b243c6045001180391cebb4cc36ab8.css" integrity="sha256-KEyPwhztE8V52QJ6nRSJPFayQ8YEUAEYA5HOu0zDarg=">
+<script defer src="/gomodel/en.search.min.a1658e3699106f7f1610e7970ae2b8b0dc76464fd842fe1713583f4f5e4e7983.js" integrity="sha256-oWWONpkQb38WEOeXCuK4sNx2Rk/YQv4XE1g/T15OeYM="></script>
+<!--
+Made with Book Theme
+https://github.com/alex-shpak/hugo-book
+-->
+
+  
+</head>
+
+<body>
+  <input type="checkbox" class="hidden" id="menu-control" />
+  <main class="container flex">
+    <aside class="book-menu">
+      
+  <nav>
+<h2 class="book-brand">
+  <a href="/gomodel"><img src="/gomodel/gopherweb.png" alt="Logo" /><span>goModel</span>
+  </a>
+</h2>
+
+
+<div class="book-search">
+  <input type="text" id="book-search-input" placeholder="Search" aria-label="Search" maxlength="64" data-hotkeys="s/" />
+  <div class="book-search-spinner spinner hidden"></div>
+  <ul id="book-search-results"></ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+  
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gorama/" class="">Ramachandran plot of PyMOL selections</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/goreduce/" class="">Adding hydrogens to PyMOL selections</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/goopt/" class="active">Geometry optimizations</a>
+  
+
+        </li>
+      
+    
+      
+        <li class="book-section-flat" >
+          
+  
+    <a href="/gomodel/docs/gomd/" class="">MD trajectory analysis</a>
+  
+
+          
+  
+  
+  
+
+  
+  <ul>
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/shape/" class="">Shape indicators</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/distances/" class="">Distances</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/ramachandran/" class="">Ramachandran plots</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/rmsd/" class="">RMSD</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/rmsf/" class="">RMSF</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/gomd/super/" class="">Superimposing a trajectory</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/cheatsheet/" class=""> goAnalyze Cheat Sheet</a>
+  
+
+        </li>
+      
+    
+      
+        <li>
+          
+  
+    <a href="/gomodel/docs/download/" class="">Download goAnalyze!</a>
+  
+
+        </li>
+      
+    
+  </ul>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+
+
+  <script>(function(){var menu=document.querySelector("aside.book-menu nav");addEventListener("beforeunload",function(event){localStorage.setItem("menu.scrollTop",menu.scrollTop);});menu.scrollTop=localStorage.getItem("menu.scrollTop");})();</script>
+
+
+ 
+    </aside>
+
+    <div class="book-page">
+      <header class="book-header">
+        
+  <div class="flex align-center justify-between">
+  <label for="menu-control">
+    <img src="/gomodel/svg/menu.svg" class="book-icon" alt="Menu" />
+  </label>
+
+  <strong>Geometry optimizations</strong>
+
+  <label for="toc-control">
+    <img src="/gomodel/svg/toc.svg" class="book-icon" alt="Table of Contents" />
+  </label>
+</div>
+
+
+  
+    <input type="checkbox" class="hidden" id="toc-control" />
+    <aside class="hidden clearfix">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#basic-optimization">Basic optimization:</a></li>
+        <li><a href="#a-bit-more-advanced">A bit more advanced</a></li>
+        <li><a href="#optimizing-protein-subsequences">Optimizing protein subsequences</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References.</a></li>
+  </ul>
+</nav>
+
+
+    </aside>
+  
+ 
+      </header>
+
+      
+      
+  <article class="markdown"><p>goAnalyze uses the <a href="https://github.com/grimme-lab/xtb">xtb</a> from the Grimme Group to optimize PyMOL objects or selections. The xtb program is open source, and easy-to-install binaries are provided.</p>
+<h2 id="basic-optimization">Basic optimization:</h2>
+<p>The command:</p>
+<pre><code>goopt sele
+</code></pre><p>Will optimize the geometry of the selection <em>sele</em> The optimized structure will be written to a new object called &ldquo;sele_opt&rdquo; (or whatevertheselectionamewas_opt&rdquo;)</p>
+<h2 id="a-bit-more-advanced">A bit more advanced</h2>
+<p>The previous is a very fast semiempirical model (GFN0-xTB).  You can request a cheaper, but still accurate force-field (GFNFF) calculation with:</p>
+<pre><code>goopt sele, -quality=medium
+</code></pre><p>or, for a more costly, but also more accurate semiempirical method (GFN2-xTB):</p>
+<pre><code>goopt sele, -quality=vhigh
+</code></pre><p>You can also indicate the charge and multiplicity of your selection as, for example:</p>
+<pre><code>goopt sele, -charge=1, -multi=2
+</code></pre><p>In many cases you don&rsquo;t want to optimize your molecule <em>in vacuo</em>. By default, goAnalyze uses the dielectric solvent for water, but you can choose to use the dielectric of a protein (which will actually be modelled as chloroform, with a dielectric constant of 5, close to the dielectric of 4 normally used for the inside of proteins) or none at all</p>
+<pre><code>goopt sele, -solvent=protein
+</code></pre><p>Finally, you can give a second selection containing atoms to be kept fixed during the optimization. If tha name of that selection was <em>selfixed</em> the command would be:</p>
+<pre><code>goopt sele fixed=selfixed
+</code></pre><h2 id="optimizing-protein-subsequences">Optimizing protein subsequences</h2>
+<p>Consider that you want to optimize a selection, a subsequence of your protein, including only the residues, say, from, 5 to 10. You could ask goopt to optimize that selection, but, when selecting, you have broken two covalent bonds (the peptidic bonds from 4 to 5 and that from 10 to 11, unless the 10 residue is the C terminal). Thus, the optimized result will probably not be what you want. Instead, you can use goAnalyze to cap the missing bonds with hydrogens. The command</p>
+<pre><code>gocap selection
+</code></pre><p>Will cap the needed broken bonds (it makes a fair attempt at guessing if a given residue is N- or C- terminal) and produce a new object, selection__cap (or whateverthename__cap). In addition, a selection called &ldquo;tofix&rdquo; will be created, which contains atoms at the edges of the subsequence which you might want to fix during the optimization. So, calling:</p>
+<pre><code>goopt  selection__cap fixed=tofix
+</code></pre><p>Will probably do what you want.</p>
+<p>But what if you want to optimize several subsequences? You can just use gocap several times. You&rsquo;ll get several &ldquo;something__cap&rdquo; objects, and the &ldquo;tofix&rdquo; selection will be updated to include the atoms to be fixed for all subsequences. Before calling goopt, you need to put all the capped objects into one selection. For example:</p>
+<pre><code>select alltogether__cap, sele1__cap, sele2__cap, sele3__cap
+</code></pre><p>Then:</p>
+<pre><code>goopt alltogether__cap, fixed=tofix
+</code></pre><p>It is important that you keep the &ldquo;__cap&rdquo; part in the final, aggregated selection name.</p>
+<p>The example shows an optimized subsequence for a protein (in magenta) superimposed with the non-optimized protein (in gray).</p>
+<p><img src="/gomodel/gallery/goopt_screen.png" alt="goopt example" /></p>
+<h1 id="references">References.</h1>
+<p>If you use the methods mentioned above in your research, we ask you to cite the appropiate references:</p>
+<ul>
+<li><a href="10.1021/acs.jctc.8b01176">GFN2-xTB</a> (The &ldquo;vhigh&rdquo; method in goAnalyze).</li>
+<li><a href="10.26434/chemrxiv.8326202.v1">GFN0-xTB</a> (The &ldquo;high&rdquo; method).</li>
+<li><a href="10.1002/anie.202004239">GFNFF</a> (The &ldquo;medium&rdquo;, and default, goAnalyze method).</li>
+<li><a href="10.1002/wcms.1493">A review on the methods</a></li>
+</ul>
+</article>
+ 
+      
+
+      <footer class="book-footer">
+        
+  <div class="flex justify-between">
+
+
+
+
+
+</div>
+
+ 
+        
+      </footer>
+
+      
+  
+  <div class="book-comments">
+
+</div>
+  
+ 
+
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+
+    
+    <aside class="book-toc">
+      
+  <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#basic-optimization">Basic optimization:</a></li>
+        <li><a href="#a-bit-more-advanced">A bit more advanced</a></li>
+        <li><a href="#optimizing-protein-subsequences">Optimizing protein subsequences</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References.</a></li>
+  </ul>
+</nav>
+
+ 
+    </aside>
+    
+  </main>
+
+  
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

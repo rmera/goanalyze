@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/gomodel/docs/gorama/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/gomd/shape/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/goreduce/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/goopt/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/gomd/distances/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/gomd/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/gomd/ramachandran/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/gomd/rmsd/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/gomd/rmsf/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/gomd/super/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/cheatsheet/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/download/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/docs/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/</loc>
+  </url>
+  
+  <url>
+    <loc>/gomodel/tags/</loc>
+  </url>
+  
+</urlset>
