@@ -1,0 +1,32 @@
+goAnalize!
+
+Or, well, dont. But really, do.
+
+
+goAnalize provides molecular modelling functionality to PyMOL.
+From optimizing a structure to analyzing a trajectory.
+See the documentarion.
+
+The whole goAnalize is open source. The Go parts are LGPL, the python parts
+are under a more liberal license (see the source files for details, the LGPL
+license is included in the repo, see the file "LICENSE"). 
+This way of licensing is valid, as none of them is compiled.
+against the other. I might change the current licensing if I see need.
+
+------------
+
+
+There is no publication on goChem yet. If you use one of the plugins here,
+or any program based on goChem before such a publication is available,
+we ask you to support goChem by citing the library in your publication as:
+
+Mera-Adasme, R., Savasci, G., Pesonen, J. "goChem: A library for computational 
+chemistry". https://www.github.com/rmera/gochem
+
+------------
+
+
+
+Note: The developers of goChem and goAnalize are not associated
+with PyMOL in any way.
+
