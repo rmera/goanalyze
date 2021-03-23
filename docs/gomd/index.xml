@@ -39,7 +39,7 @@ gomd distances, sele1, sele2, sele3, sele4 ... Which will plot the distances bet
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/goanalyze/docs/gomd/ramachandran/</guid>
-      <description>The gomodel MD Ramachandran plots work similarly to the isolated-structure ones. The main differences are:
+      <description>The goAnalyze MD Ramachandran plots work similarly to the isolated-structure ones. The main differences are:
  Only one selection is accepted The point in the plot are colored by the frame of the trajectory to which they correspond  You will also notice that the appearance of the plot is different in both cases. This is because only the MD trajectory Ramachandran plot uses the Python Matplotlib library, while the single-structure one uses Go and Gonum to produce the image.</description>
     </item>
     
