@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on goModel</title>
-    <link>/gomodel/tags/</link>
-    <description>Recent content in Tags on goModel</description>
+    <title>Tags on goAnalyze</title>
+    <link>/goanalyze/tags/</link>
+    <description>Recent content in Tags on goAnalyze</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-en</language>
     
-	<atom:link href="/gomodel/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/goanalyze/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

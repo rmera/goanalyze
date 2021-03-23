@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docs on goModel</title>
-    <link>/gomodel/docs/</link>
-    <description>Recent content in Docs on goModel</description>
+    <title>Docs on goAnalyze</title>
+    <link>/goanalyze/docs/</link>
+    <description>Recent content in Docs on goAnalyze</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-en</language>
     
-	<atom:link href="/gomodel/docs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/goanalyze/docs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ramachandran plot of PyMOL selections</title>
-      <link>/gomodel/docs/gorama/</link>
+      <link>/goanalyze/docs/gorama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/gorama/</guid>
+      <guid>/goanalyze/docs/gorama/</guid>
       <description>The following command
 gorama sele Will produce a Ramachandran plot for the selection sele. In this case, the different points in the plot will be colored, from blue to red, according to the place of the sequence corresponding to each residue plotted (i.e. the mark corresponding to the first residue will be blue, the last, red)
 You can also get a plot for several selections with:
@@ -24,10 +24,10 @@ gorama sele1, sele2, sele3 .</description>
     
     <item>
       <title>Adding hydrogens to PyMOL selections</title>
-      <link>/gomodel/docs/goreduce/</link>
+      <link>/goanalyze/docs/goreduce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/goreduce/</guid>
+      <guid>/goanalyze/docs/goreduce/</guid>
       <description>goAnalyze uses Reduce to add hydrogens to a (proteic) PyMOL selection. Since a binary is provided for Reduce, installing it is nothing more than downloading it, renaming the binary to &amp;ldquo;reduce&amp;rdquo; and ensuring that it is in the PATH.
 It&amp;rsquo;s use is very simple. If you have the Reduce program installed and the binary is named &amp;ldquo;reduce&amp;rdquo;, you only have to type the following, in the PyMOL command line:
 goreduce sele This will protonate the selection sele.</description>
@@ -35,10 +35,10 @@ goreduce sele This will protonate the selection sele.</description>
     
     <item>
       <title>Geometry optimizations</title>
-      <link>/gomodel/docs/goopt/</link>
+      <link>/goanalyze/docs/goopt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/goopt/</guid>
+      <guid>/goanalyze/docs/goopt/</guid>
       <description>goAnalyze uses the xtb from the Grimme Group to optimize PyMOL objects or selections. The xtb program is open source, and easy-to-install binaries are provided.
 Basic optimization: The command:
 goopt sele Will optimize the geometry of the selection sele The optimized structure will be written to a new object called &amp;ldquo;sele_opt&amp;rdquo; (or whatevertheselectionamewas_opt&amp;rdquo;)
@@ -47,20 +47,20 @@ A bit more advanced The previous is a very fast semiempirical model (GFN0-xTB). 
     
     <item>
       <title> goAnalyze Cheat Sheet</title>
-      <link>/gomodel/docs/cheatsheet/</link>
+      <link>/goanalyze/docs/cheatsheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/cheatsheet/</guid>
+      <guid>/goanalyze/docs/cheatsheet/</guid>
       <description>All arguments go separated by commas Optional arguments are shown between brackets, with their default value.  Single structures Ramachandran plot gorama sele1, sele2, ... Add hydrogens to a (proteic) selection goreduce sele Geometry optimization goopt sele [fixed=fixsele] [quality=medium] [solvent=water] [charge=0] [multi=1] Trajectories All trajectory functions accept a &amp;ldquo;skip=N&amp;rdquo; paramenter that causes gomd to analyze every N frames. skip=1 (the default) reads every 1 frame, i.e. all frames.
 Distances gomd distances, sele1, sele2, sele3, sele4 .</description>
     </item>
     
     <item>
       <title>Download goAnalyze!</title>
-      <link>/gomodel/docs/download/</link>
+      <link>/goanalyze/docs/download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/download/</guid>
+      <guid>/goanalyze/docs/download/</guid>
       <description>goAnalyze is open source, but we also provide easy-to-install binaries for Linux. (the installer assumes Bash).
 Mac is a work in progress. Binaries are provided, but we haven&amp;rsquo;t been able to test them, or the instalation procedure, as we are not Mac users and we don&amp;rsquo;t own an Apple machine. Windows support has the same issue, with the additional complication of the OS being more different from Linux than Mac.</description>
     </item>

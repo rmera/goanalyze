@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>goAnalyze! on goModel</title>
-    <link>/gomodel/</link>
-    <description>Recent content in goAnalyze! on goModel</description>
+    <title>goAnalyze! on goAnalyze</title>
+    <link>/goanalyze/</link>
+    <description>Recent content in goAnalyze! on goAnalyze</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-en</language>
     
-	<atom:link href="/gomodel/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/goanalyze/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ramachandran plot of PyMOL selections</title>
-      <link>/gomodel/docs/gorama/</link>
+      <link>/goanalyze/docs/gorama/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/gorama/</guid>
+      <guid>/goanalyze/docs/gorama/</guid>
       <description>The following command
 gorama sele Will produce a Ramachandran plot for the selection sele. In this case, the different points in the plot will be colored, from blue to red, according to the place of the sequence corresponding to each residue plotted (i.e. the mark corresponding to the first residue will be blue, the last, red)
 You can also get a plot for several selections with:
@@ -24,10 +24,10 @@ gorama sele1, sele2, sele3 .</description>
     
     <item>
       <title>Shape indicators</title>
-      <link>/gomodel/docs/gomd/shape/</link>
+      <link>/goanalyze/docs/gomd/shape/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/gomd/shape/</guid>
+      <guid>/goanalyze/docs/gomd/shape/</guid>
       <description>goAnalyze can obtain indicators of the global shape of a PyMOL selection. The percentage of planarity and elongation are derived from the properties of the moment of inertia tensor, based on the work by Taylor et al., .(1983), J Mol Graph, 1, 30
 To obtain the percentage of planarity and elongation for a selection in a single frame, use:
 goshape sele Where sele is the name of the selection.
@@ -36,10 +36,10 @@ If you want to follow the evolution of the shape of one or more selections along
     
     <item>
       <title>Adding hydrogens to PyMOL selections</title>
-      <link>/gomodel/docs/goreduce/</link>
+      <link>/goanalyze/docs/goreduce/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/goreduce/</guid>
+      <guid>/goanalyze/docs/goreduce/</guid>
       <description>goAnalyze uses Reduce to add hydrogens to a (proteic) PyMOL selection. Since a binary is provided for Reduce, installing it is nothing more than downloading it, renaming the binary to &amp;ldquo;reduce&amp;rdquo; and ensuring that it is in the PATH.
 It&amp;rsquo;s use is very simple. If you have the Reduce program installed and the binary is named &amp;ldquo;reduce&amp;rdquo;, you only have to type the following, in the PyMOL command line:
 goreduce sele This will protonate the selection sele.</description>
@@ -47,10 +47,10 @@ goreduce sele This will protonate the selection sele.</description>
     
     <item>
       <title>Geometry optimizations</title>
-      <link>/gomodel/docs/goopt/</link>
+      <link>/goanalyze/docs/goopt/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/goopt/</guid>
+      <guid>/goanalyze/docs/goopt/</guid>
       <description>goAnalyze uses the xtb from the Grimme Group to optimize PyMOL objects or selections. The xtb program is open source, and easy-to-install binaries are provided.
 Basic optimization: The command:
 goopt sele Will optimize the geometry of the selection sele The optimized structure will be written to a new object called &amp;ldquo;sele_opt&amp;rdquo; (or whatevertheselectionamewas_opt&amp;rdquo;)
@@ -59,10 +59,10 @@ A bit more advanced The previous is a very fast semiempirical model (GFN0-xTB). 
     
     <item>
       <title>Distances</title>
-      <link>/gomodel/docs/gomd/distances/</link>
+      <link>/goanalyze/docs/gomd/distances/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/gomd/distances/</guid>
+      <guid>/goanalyze/docs/gomd/distances/</guid>
       <description>You can plot the distances between pairs of selections along a trajectory. If a selection has more than one atom, its center of mass will be used. If the masses for one or more atoms can&amp;rsquo;t be obtained, the geometric center will be used (a warning is printer in this case).
 The command is:
 gomd distances, sele1, sele2, sele3, sele4 ... Which will plot the distances between the selections sele1 and sele2 and between sele3 and sele4.</description>
@@ -70,20 +70,20 @@ gomd distances, sele1, sele2, sele3, sele4 ... Which will plot the distances bet
     
     <item>
       <title>Ramachandran plots</title>
-      <link>/gomodel/docs/gomd/ramachandran/</link>
+      <link>/goanalyze/docs/gomd/ramachandran/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/gomd/ramachandran/</guid>
+      <guid>/goanalyze/docs/gomd/ramachandran/</guid>
       <description>The gomodel MD Ramachandran plots work similarly to the isolated-structure ones. The main differences are:
  Only one selection is accepted The point in the plot are colored by the frame of the trajectory to which they correspond  You will also notice that the appearance of the plot is different in both cases. This is because only the MD trajectory Ramachandran plot uses the Python Matplotlib library, while the single-structure one uses Go and Gonum to produce the image.</description>
     </item>
     
     <item>
       <title>RMSD</title>
-      <link>/gomodel/docs/gomd/rmsd/</link>
+      <link>/goanalyze/docs/gomd/rmsd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/gomd/rmsd/</guid>
+      <guid>/goanalyze/docs/gomd/rmsd/</guid>
       <description>The RMSD of several selections against references for each of them can be plotted. The general way to do it is:
 gomd rmsd, ref1, sel1, ref2, sel2 ... Where ref1 is the references state for sel1 and so on. In the most common case, you simply want to use the first frame of the same selection as a reference. In that case, simply do:
 gomd rmsd, sel1, sel1, sel2, sel2 .</description>
@@ -91,10 +91,10 @@ gomd rmsd, sel1, sel1, sel2, sel2 .</description>
     
     <item>
       <title>RMSF</title>
-      <link>/gomodel/docs/gomd/rmsf/</link>
+      <link>/goanalyze/docs/gomd/rmsf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/gomd/rmsf/</guid>
+      <guid>/goanalyze/docs/gomd/rmsf/</guid>
       <description>You can easily plot the RMSF for all atoms in a selection, over a trajectory by using this command:
 gomd rmsf, sele Where sele is the name of your selection.
 Note that only one selection is accepted here. If you give more, the rest will be ignored. A common application of this function is to obtain the RMSF for the alpha carbons of a protein during a trajectory, as in the example:</description>
@@ -102,10 +102,10 @@ Note that only one selection is accepted here. If you give more, the rest will b
     
     <item>
       <title>Superimposing a trajectory</title>
-      <link>/gomodel/docs/gomd/super/</link>
+      <link>/goanalyze/docs/gomd/super/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/gomd/super/</guid>
+      <guid>/goanalyze/docs/gomd/super/</guid>
       <description>You can superimpose a whole trajectory to a given reference. You need 3 selections:
 The reference For which the first state will be taken.
 The target selection This selection needs to have the same number of atoms as the reference. For each frame of this selection gomd will calculate the superposition to the first frame of the reference, thus obtaining rotation and translation matrices.
@@ -114,20 +114,20 @@ The &amp;ldquo;moved&amp;rdquo; selection For each frame, the rotation + transla
     
     <item>
       <title> goAnalyze Cheat Sheet</title>
-      <link>/gomodel/docs/cheatsheet/</link>
+      <link>/goanalyze/docs/cheatsheet/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/cheatsheet/</guid>
+      <guid>/goanalyze/docs/cheatsheet/</guid>
       <description>All arguments go separated by commas Optional arguments are shown between brackets, with their default value.  Single structures Ramachandran plot gorama sele1, sele2, ... Add hydrogens to a (proteic) selection goreduce sele Geometry optimization goopt sele [fixed=fixsele] [quality=medium] [solvent=water] [charge=0] [multi=1] Trajectories All trajectory functions accept a &amp;ldquo;skip=N&amp;rdquo; paramenter that causes gomd to analyze every N frames. skip=1 (the default) reads every 1 frame, i.e. all frames.
 Distances gomd distances, sele1, sele2, sele3, sele4 .</description>
     </item>
     
     <item>
       <title>Download goAnalyze!</title>
-      <link>/gomodel/docs/download/</link>
+      <link>/goanalyze/docs/download/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/gomodel/docs/download/</guid>
+      <guid>/goanalyze/docs/download/</guid>
       <description>goAnalyze is open source, but we also provide easy-to-install binaries for Linux. (the installer assumes Bash).
 Mac is a work in progress. Binaries are provided, but we haven&amp;rsquo;t been able to test them, or the instalation procedure, as we are not Mac users and we don&amp;rsquo;t own an Apple machine. Windows support has the same issue, with the additional complication of the OS being more different from Linux than Mac.</description>
     </item>

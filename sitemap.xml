@@ -3,67 +3,67 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/gomodel/docs/gorama/</loc>
+    <loc>/goanalyze/docs/gorama/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/gomd/shape/</loc>
+    <loc>/goanalyze/docs/gomd/shape/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/goreduce/</loc>
+    <loc>/goanalyze/docs/goreduce/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/goopt/</loc>
+    <loc>/goanalyze/docs/goopt/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/gomd/distances/</loc>
+    <loc>/goanalyze/docs/gomd/distances/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/gomd/</loc>
+    <loc>/goanalyze/docs/gomd/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/gomd/ramachandran/</loc>
+    <loc>/goanalyze/docs/gomd/ramachandran/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/gomd/rmsd/</loc>
+    <loc>/goanalyze/docs/gomd/rmsd/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/gomd/rmsf/</loc>
+    <loc>/goanalyze/docs/gomd/rmsf/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/gomd/super/</loc>
+    <loc>/goanalyze/docs/gomd/super/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/cheatsheet/</loc>
+    <loc>/goanalyze/docs/cheatsheet/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/download/</loc>
+    <loc>/goanalyze/docs/download/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/categories/</loc>
+    <loc>/goanalyze/categories/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/docs/</loc>
+    <loc>/goanalyze/docs/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/</loc>
+    <loc>/goanalyze/</loc>
   </url>
   
   <url>
-    <loc>/gomodel/tags/</loc>
+    <loc>/goanalyze/tags/</loc>
   </url>
   
 </urlset>
