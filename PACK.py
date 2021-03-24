@@ -24,6 +24,6 @@ for i in  OS:
 	for j in packed_files:
 		os.system("cp %s %s/"%(j,dirname))
 	os.chdir(dirname)
-	os.system("tar cvzf ../goModel-%s-%s.tgz *"%(version,i))
+	os.system("tar cvzf ../goAnalyze-%s-%s.tgz *"%(version,i))
 	os.chdir(base)
 

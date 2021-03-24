@@ -153,7 +153,9 @@ def goopt(sel, quality="high",fixed=None,charge=0,multi=1,solvent="water",dryrun
 	info = gochem.get_info(proc)
 	mod=gochem.get_model(proc,info,0)
 	gochem.LoadNew(mod,sel+"_opt")
-
+	print("Structure optimized with the xtb program from the Grimme group (https://github.com/grimme-lab/xtb), using the %s method"%method.upper())
+	print("Remember to cite:\nGFN2-xTB:  10.1021/acs.jctc.8b01176\nGFN0-xTB: 10.26434/chemrxiv.8326202.v1\n GFNFF: 10.1002/anie.202004239")
+	print("The xtb reference: 10.1002/wcms.1493")
 
 
 def gotraj(sel,filename="unlikelytobearealname.exe",skip=1,extension=None):
