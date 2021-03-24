@@ -61,8 +61,8 @@ Distances gomd distances, sele1, sele2, sele3, sele4 .</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/goanalyze/docs/download/</guid>
-      <description>goAnalyze is open source, but we also provide easy-to-install binaries for Linux. (the installer assumes Bash).
-Mac is a work in progress. Binaries are provided, but we haven&amp;rsquo;t been able to test them, or the instalation procedure, as we are not Mac users and we don&amp;rsquo;t own an Apple machine. Windows support has the same issue, with the additional complication of the OS being more different from Linux than Mac.</description>
+      <description>goAnalyze is open source, but easy-to-install binaries are provided for Linux. (the installer assumes Bash).
+Mac is a work in progress. Binaries are provided, but the installation procedure has not been tested, as this project has, as of now, one developer only, and I am not a Mac user or own an Apple Machine. Windows support has the same issue, with the additional complication of the OS being more different from Linux than Mac.</description>
     </item>
     
   </channel>
