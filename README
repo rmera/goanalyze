@@ -7,6 +7,18 @@ goAnalize provides molecular modelling functionality to PyMOL.
 From optimizing a structure to analyzing a trajectory.
 See the documentarion.
 
+Installation:
+
+If you downloaded the binary distribution, simply run the INSTALL.py file included:
+
+python INSTALL.py
+
+If you are building from source, you will need the Go toolchain. goAnalyze is module-aware.
+You can use "go build" in each directory with Go code, or automate the process calling the
+BUILD_SYSTEM.py script.
+
+
+
 The whole goAnalize is open source. The Go parts are LGPL, the python parts
 are under a more liberal license (see the source files for details, the LGPL
 license is included in the repo, see the file "LICENSE"). 
