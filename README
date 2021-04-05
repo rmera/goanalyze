@@ -9,7 +9,8 @@ See the documentarion.
 
 Installation:
 
-If you downloaded the binary distribution, simply run the INSTALL.py file included:
+If you downloaded the binary distribution, you can install goAnalyze on Linux (Bash)
+simply run the INSTALL.py file included:
 
 python INSTALL.py
 
@@ -17,24 +18,41 @@ If you are building from source, you will need the Go toolchain. goAnalyze is mo
 You can use "go build" in each directory with Go code, or automate the process calling the
 BUILD_SYSTEM.py script.
 
-
-
 The whole goAnalize is open source. The Go parts are LGPL, the python parts
 are under a more liberal license (see the source files for details, the LGPL
 license is included in the repo, see the file "LICENSE"). 
 This way of licensing is valid, as none of them is compiled.
 against the other. I might change the current licensing if I see need.
 
+ 
+TODOs:
+
+- Bash-independent Linux installer
+- Mac installer.
+- Additional analysis capabilities
+
+If you'd like to contribute to the project, you are very welcome to do so.
+
+- Please always work on the devel branch, or a feature branch, 
+  and submit pull requests to that one.
+- Smaller things like typos are better resolved with Github issues
+  than with pull requests.
+- Please be polite!
+
+
+
 ------------
 
 
-There is no publication on goChem yet. If you use one of the plugins here,
+goAnalyze makes extensive use of goChem. 
+
+There is no publication on goChem yet. If you use one goAnalyze,
 or any program based on goChem before such a publication is available,
 we ask you to support goChem by citing the library in your publication as:
 
-Mera-Adasme, R., Savasci, G., Pesonen, J. "goChem: A library for computational 
-chemistry". https://www.github.com/rmera/gochem
-
+Domínguez, C., Jiménez, V, Savasci, G., Pesonen, J., Mera-Adasme, R.
+"goChem: A library for computational 
+chemistry". https://www.gochem.org
 ------------
 
 
