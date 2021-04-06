@@ -39,10 +39,9 @@ goreduce sele This will protonate the selection sele.</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/goanalyze/docs/goopt/</guid>
-      <description>goAnalyze uses the xtb from the Grimme Group to optimize PyMOL objects or selections. The xtb program is open source, and easy-to-install binaries are provided.
+      <description>goAnalyze uses the xtb from the Grimme Group to optimize PyMOL objects or selections. The xtb program is open source, and easy-to-install binaries are provided. At the moment, xtb binaries are provided only for Linux, so that is the only OS supported by goopt.
 Basic optimization: The command:
-goopt sele Will optimize the geometry of the selection sele The optimized structure will be written to a new object called &amp;ldquo;sele_opt&amp;rdquo; (or whatevertheselectionamewas_opt&amp;rdquo;)
-A bit more advanced The previous is a very fast semiempirical model (GFN0-xTB). You can request a cheaper, but still accurate force-field (GFNFF) calculation with:</description>
+goopt sele Will optimize the geometry of the selection sele The optimized structure will be written to a new object called &amp;ldquo;sele_opt&amp;rdquo; (or whatevertheselectionamewas_opt&amp;rdquo;)</description>
     </item>
     
     <item>
