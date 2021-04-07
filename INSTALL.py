@@ -22,6 +22,9 @@ if OS in ["linux", "darwin"]:
 	#shell settings first. I assume Bash. If you use zsh or something, 
 	# you'll have to edit this, or just set things by hand, you hipster :-D
 	bash=open(".bashrc","a")
+	if os.path.isfile(".zprofile"):
+	    	bash.close()
+		bash=open(".zprofile","a") #not tested!
 	bash.write("\n# goAnalyze stuff\n")
 	bash.write("export PATH=%s/bin_%s:$PATH\n"%(base,OS.title()))
 	bash.write("export PYTHONPATH=%s:$PYTHONPATH #needed for the gochem.py library\n"%(base))

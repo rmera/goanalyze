@@ -9,7 +9,10 @@ See the documentarion.
 
 Installation:
 
-If you downloaded the binary distribution, you can install goAnalyze on Linux (Bash)
+If you downloaded the binary distribution, you can install goAnalyze on Linux, with
+Bash or zsh (the latter has not been tested, but it is a rather simple procedure, so I
+expect it to work).
+
 simply run the INSTALL.py file included:
 
 python INSTALL.py
@@ -27,7 +30,6 @@ against the other. I might change the current licensing if I see need.
  
 TODOs:
 
-- Bash-independent Linux installer
 - Mac installer.
 - Additional analysis capabilities
 
